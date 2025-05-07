@@ -1,31 +1,25 @@
 import re
-from collections import Counter
 
-def count_word_frequency(file_path):
+def count_total_words(file_path):
     try:
         # Initialize an empty string to store text
         text = ""
         
-        # Read the file in chunks to handle large files efficiently
+        # Read the file
         with open(file_path, 'r', encoding='utf-8') as file:
             for chunk in iter(lambda: file.read(8192), ''):
-                text += chunk.lower()  # Convert to lowercase for consistency
+                text += chunk.lower()  # Convert to lowercase
 
         # Remove punctuation and split into words using regex
         words = re.findall(r'\b\w+\b', text)
 
-        # Count frequency of each word using Counter
-        word_counts = Counter(words)
+        # Count total number of words
+        total_words = len(words)
 
-        # Sort by frequency (most common first) and alphabetically for ties
-        sorted_counts = sorted(word_counts.items(), key=lambda x: (-x[1], x[0]))
+        # Print result
+        print(f"Total number of words: {total_words}")
 
-        # Print results
-        print("Word Frequency Count:")
-        for word, count in sorted_counts:
-            print(f"{word}: {count}")
-
-        return word_counts
+        return total_words
 
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
@@ -40,4 +34,4 @@ def count_word_frequency(file_path):
 if __name__ == "__main__":
     # Prompt user for file path
     file_path = input("Enter the path to the text file: ")
-    count_word_frequency(file_path)
+    count_total_words(file_path)
