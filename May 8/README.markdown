@@ -4,8 +4,6 @@
 
 I have done it in google colab and downloaded it in both .ipynb and .py format. Both formats I have uploaded here along with the data I have used. Since previous functions need to be used I have used the word count function.
 
-Developed in Google Colab, downloaded as `sales_data_analysis_colab.ipynb` and `sales_data_analysis_colab.py`. Uses `sales_data_sample.csv`. 
-
 ## Main Steps
 
  1. Import `pandas`, `numpy`, `matplotlib`, `re`, `collections`.
@@ -17,4 +15,4 @@ Developed in Google Colab, downloaded as `sales_data_analysis_colab.ipynb` and `
  7. Calculate mean, median, std of `TOTAL_SALES` with NumPy, print stats.
  8. Count words in `CUSTOMERNAME` using prior word count logic, print top 5.
  9. Plot yearly sales bar chart, save as `annual_sales.png`, display.
-10. Save analysis to `analysis_results.txt`, print confirmation.
+10. Save analysis to `analysis_results.txt`.
