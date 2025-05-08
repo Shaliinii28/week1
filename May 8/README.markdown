@@ -16,3 +16,6 @@ I have done it in google colab and downloaded it in both .ipynb and .py format. 
  8. Count words in `CUSTOMERNAME` using prior word count logic, print top 5.
  9. Plot yearly sales bar chart, save as `annual_sales.png`, display.
 10. Save analysis to `analysis_results.txt`.
+
+## Colab Notebook Link:
+https://colab.research.google.com/drive/1tb7FtdMyvW2Kh77GoV1BAD5ZXSt3vP8x?usp=sharing
