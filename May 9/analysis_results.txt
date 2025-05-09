@@ -1,0 +1,25 @@
+Sales Analysis Results
+
+Yearly Sales Summary:
+ YEAR  TOTAL_SALES
+ 2003   2898149.94
+ 2004   3913700.87
+ 2005   1479035.98
+
+Product Line Sales:
+     PRODUCTLINE  TOTAL_SALES
+    Classic Cars   2968546.40
+     Motorcycles    971086.29
+          Planes    877942.21
+           Ships    677940.40
+          Trains    203804.26
+Trucks and Buses    947355.18
+    Vintage Cars   1644212.05
+
+Top 5 Customers:
+                CUSTOMERNAME  TOTAL_SALES
+       Euro Shopping Channel    766195.05
+Mini Gifts Distributors Ltd.    530587.19
+  Australian Collectors, Co.    164575.87
+           La Rochelle Gifts    153909.82
+          Muscle Machine Inc    151782.04
